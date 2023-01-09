@@ -509,7 +509,7 @@ img {
   background-color: var(--first-color);
 }
 .skills_javascript {
-  width: 60%;
+  width: 70%;
 }
 .skills_css {
   width: 50%;
@@ -520,23 +520,29 @@ img {
 .skills_node {
   width: 40%;
 }
+.skills_react {
+  width: 50%;
+}
+.skills_github {
+  width: 70%;
+}
+.skills_git {
+  width: 80%;
+}
 .skills_esnext {
-  width: 10%;
+  width: 50%;
 }
 .skills_ajax {
-  width: 10%;
+  width: 20%;
 }
 .skills_bootstrap {
-  width: 10%;
+  width: 30%;
 }
 .skills_vuejs {
-  width: 10%;
+  width: 20%;
 }
 .skills_jquery {
-  width: 10%;
-}
-.skills_angular {
-  width: 10%;
+  width: 30%;
 }
 
 .skills_close .skills_list {
