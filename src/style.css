@@ -185,7 +185,6 @@ img {
   gap: 1.5rem;
   align-content: center;
   align-items: center;
-  justify-items: center;
 }
 
 .header {
@@ -859,7 +858,7 @@ img {
     margin-left: 3rem;
   }
   .about_container {
-    column-gap: 5rem;
+    column-gap: 2rem;
   }
   .about_img {
     width: 350px;
