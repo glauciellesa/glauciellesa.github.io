@@ -313,13 +313,12 @@ img {
 }
 
 .home_img {
-  width: 400px;
+  width: 270px;
   clip-path: circle();
 }
 
 .home_data {
   grid-column: 1/3;
-  margin: 8px;
 }
 
 .home_title {
@@ -365,9 +364,7 @@ img {
 }
 /* ========== BUTTONS ========== */
 .button {
-  margin: 0 100px;
-  width: 200px;
-  justify-content: center;
+  display: inline-block;
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem;
@@ -785,10 +782,6 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .home_img {
-    order: 1;
-    justify-self: center;
-  }
   .container {
     margin-left: auto;
     margin-right: auto;
