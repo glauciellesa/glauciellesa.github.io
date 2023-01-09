@@ -1,521 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- ==== UNICONS ==== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
     <!-- ==== SWIPER CSS ==== -->
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
 
-    <title> Portfolio </title>
-</head>
-<body>
+    <title>Portfolio</title>
+  </head>
+  <body>
     <!-- ==== HEADER ==== -->
-    <header class="header" id="header"> <!-- header.header#header(criar classe e id) -->
-        <nav class="nav container"><!-- nav.nav.container (comando criar rapidamente a classe e espaço) -->
-            <a href="#" class="nav_logo">Glaucielle</a>
-            <div class="nav_menu" id="nav-menu"> <!-- div.nav_menu#nav-menu -->
-                <ul class="nav_list grid"> <!-- ul.nav_list.grid -->
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class="uil uil-estate nav_icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">
-                            <i class="uil uil-user nav_icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class="uil uil-file-alt nav_icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#portfolio" class="nav_link">
-                            <i class="uil uil-scenery nav_icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">
-                            <i class="uil uil-message nav_icon"></i> Contact me
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
-            </div>
+    <header class="header" id="header">
+      <!-- header.header#header(criar classe e id) -->
+      <nav class="nav container">
+        <!-- nav.nav.container (comando criar rapidamente a classe e espaço) -->
+        <a href="#" class="nav_logo">Glaucielle</a>
+        <div class="nav_menu" id="nav-menu">
+          <!-- div.nav_menu#nav-menu -->
+          <ul class="nav_list grid">
+            <!-- ul.nav_list.grid -->
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">
+                <i class="uil uil-user nav_icon"></i> About
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="uil uil-file-alt nav_icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">
+                <i class="uil uil-scenery nav_icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i> Contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
 
-            <div class="nav_btns">
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav_btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- ==== MAIN ==== -->
     <main class="1-main">
-        <!-- ==== HOME ==== -->  
-        <section class="home section" id="home">
-            <div class="home_container container grid">
-                <div class="home_content grid">
-                    <div class="home_social">
-                        <a href="https://www.linkedin.com/in/glauciellec/" target="_blank" class="home_social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-
-                        <a href="https://github.com/glauciellesa" target="_blank" class="home_social-icon">
-                            <i class="uil uil-github-alt"></i> 
-                        </a>
-
-                        <a href="https://www.instagram.com/eidizai_portugues/" target="_blank" class="home_social-icon">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                    </div>
-
-                    <div class="home_img">
-                        <img src="src/img/foto.jpg" alt="Glaucielle's photo home">
-                    </div>
-
-                    <div class="home_data">
-                        <h1 class="home_title">Hi, I'm Glaucielle</h1>
-                        <h3 class="home_subtitle">JavaScript Developer Apprentice</h3>
-                        <p class="home_description">I'm JavaScript, HTML and CSS apprentice based out of Brussels, Belgium. I'm passionate about technology and self-taught.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me<i class="uil uil-message button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home_scroll">
-                    <a href="#about" class="home_scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                        <span class="home_scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                    </a>
-                </div>
+      <!-- ==== HOME ==== -->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_img">
+              <img src="src/img/foto.jpg" alt="Glaucielle's photo home" />
             </div>
-        </section>
-        <!-- ==== ABOUT ==== -->
-        <section class="about section" id="about">
-            <h2 class="section_title">About Me</h2>
-            <span class="section_subtitle">My introduction</span>
+            <div class="home_social">
+              <a
+                href="https://www.linkedin.com/in/glauciellec/"
+                target="_blank"
+                class="home_social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
 
-            <div class="about_container container grid">
-                <div class="about_img">
-                    <img src="src/img/sobre.jpg" alt="" class="img_id">
-                </div>
-               
-                <div class="about_data">
-                    <p class="about_description">
-                        I started 2022 by doing a JavaScript course. During these course I learned front and back end tools like HTML, CSS, Node, Git, Github, Unix; and since then I have invested in a few other online classes through Udemy and linkedin learning as I am determined to further develop my JavaScript skills and progress to a junior front end developer role. As a Junior, I see myself working in a dynamic and challenging environment, working in a collaborative team. I am seeking a job that will allow me to expand my knowledge and experience in coding. If I don’t know - I will learn
-                    </p>
-                    <div class="about_info">
-                        <div>
-                            <span class="about_info-title">1 ano</span>
-                            <span class="about_info-name"> <br>JavaScript</span>
-                        </div>
+              <a
+                href="https://github.com/glauciellesa"
+                target="_blank"
+                class="home_social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
 
-                        <div>
-                            <span class="about_info-title">3+</span>
-                            <span class="about_info-name"> <br>Personal projects</span>
-                        </div>
-                    </div>
-
-                    <div class="about_buttons">
-                        <a download="" href="src/curriculo-Glaucielle.pdf" class="button button--flex">
-                        Download CV<i class="uil uil-download-alt button_icon"></i>
-                        </a>
-                    </div>
-                </div>
+              <a
+                href="https://www.instagram.com/eidizai_portugues/"
+                target="_blank"
+                class="home_social-icon"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
             </div>
-        </section>
 
-        <!-- ==== SKILLS ==== -->
-        <section class="skills section" id="skills">
-            <h2 class="section_title">Skills</h2>
-            <span class="section_subtitle">My technical level</span>
+            <div class="home_data">
+              <h1 class="home_title">Hi, I'm Glaucielle</h1>
+              <h3 class="home_subtitle">JavaScript Developer Apprentice</h3>
+              <p class="home_description">
+                I'm JavaScript, HTML and CSS apprentice based out of Brussels,
+                Belgium. I'm passionate about technology and self-taught.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me<i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
 
-            <div class="skills_container container grid">
-                <div>
-                    <!-- ==== SKILLS 1==== -->
-                    <div class="skills_content skills_open">
-                        <div class="skills_header">
-                            <i class="uil uil-brackets-curly skills_icon"></i>
+          <div class="home_scroll">
+            <a href="#about" class="home_scroll-button button--flex">
+              <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+              <span class="home_scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home_scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ==== ABOUT ==== -->
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">My introduction</span>
 
-                            <div>
-                                <h1 class="skills_title">Frontend developer</h1>
-                                <span class="skills_subtitle">1 years of experience</span>
-                            </div>
+        <div class="about_container container grid">
+          <div class="about_img">
+            <img src="src/img/sobre.jpg" alt="" class="img_id" />
+          </div>
 
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                        </div>
+          <div class="about_data">
+            <p class="about_description">
+              I started 2022 by doing a JavaScript course. During these course I
+              learned front and back end tools like HTML, CSS, Node, Git,
+              Github, Unix; and since then I have invested in a few other online
+              classes through Udemy and linkedin learning as I am determined to
+              further develop my JavaScript skills and progress to a junior
+              front end developer role. As a Junior, I see myself working in a
+              dynamic and challenging environment, working in a collaborative
+              team. I am seeking a job that will allow me to expand my knowledge
+              and experience in coding. If I don’t know - I will learn
+            </p>
+            <div class="about_info">
+              <div>
+                <span class="about_info-title">1 ano</span>
+                <span class="about_info-name"> <br />JavaScript</span>
+              </div>
 
-                        <div class="skills_list grid">
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">JavaScript</h3>
-                                    <span class="skills_number">60%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_javascript"></span>
-                                </div>
-                            </div>
+              <div>
+                <span class="about_info-title">3+</span>
+                <span class="about_info-name"> <br />Personal projects</span>
+              </div>
+            </div>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">CSS</h3>
-                                    <span class="skills_number">50%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_css"></span>
-                                </div>
-                            </div>
+            <div class="about_buttons">
+              <a
+                download=""
+                href="src/curriculo-Glaucielle.pdf"
+                class="button button--flex"
+              >
+                Download CV<i class="uil uil-download-alt button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">HTML</h3>
-                                    <span class="skills_number">50%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_html"></span>
-                                </div>
-                            </div>
+      <!-- ==== SKILLS ==== -->
+      <section class="skills section" id="skills">
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle">My technical level</span>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">Node</h3>
-                                    <span class="skills_number">40%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_node"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="skills_container container grid">
+          <div>
+            <!-- ==== SKILLS 1==== -->
+            <div class="skills_content skills_open">
+              <div class="skills_header">
+                <i class="uil uil-brackets-curly skills_icon"></i>
 
                 <div>
-                      <!-- ==== Learning ==== -->
-                      <div class="skills_content skills_close">
-                        <div class="skills_header">
-                            <i class="uil uil-book-reader skills_icon"></i>
+                  <h1 class="skills_title">Frontend developer</h1>
+                  <span class="skills_subtitle">1 years of experience</span>
+                </div>
 
-                            <div>
-                                <h1 class="skills_titles">New learning</h1>
-                                <span class="skills_subtitle">every day</span>
-                            </div>
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
 
-                                <i class="uil uil-angle-down skills_arrow"></i>
-                        </div>
+              <div class="skills_list grid">
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">JavaScript</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_javascript"></span>
+                  </div>
+                </div>
 
-                        <div class="skills_list grid">
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">ESNext</h3>
-                                    <span class="skills_number">10%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_esnext"></span>
-                                </div>
-                            </div>
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">CSS</h3>
+                    <span class="skills_number">50%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_css"></span>
+                  </div>
+                </div>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">Ajax</h3>
-                                    <span class="skills_number">10%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_ajax"></span>
-                                </div>
-                            </div>
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">HTML</h3>
+                    <span class="skills_number">50%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_html"></span>
+                  </div>
+                </div>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">Bootstrap</h3>
-                                    <span class="skills_number">10%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_bootstrap"></span>
-                                </div>
-                            </div>
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Node</h3>
+                    <span class="skills_number">40%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_node"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">VueJS</h3>
-                                    <span class="skills_number">10%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_vuejs"></span>
-                                </div>
-                            </div>
+          <div>
+            <!-- ==== Learning ==== -->
+            <div class="skills_content skills_close">
+              <div class="skills_header">
+                <i class="uil uil-book-reader skills_icon"></i>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">jQuery</h3>
-                                    <span class="skills_number">10%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_jquery"></span>
-                                </div>
-                            </div>
+                <div>
+                  <h1 class="skills_titles">New learning</h1>
+                  <span class="skills_subtitle">every day</span>
+                </div>
 
-                            <div class="skills_data">
-                                <div class="skills_titles">
-                                    <h3 class="skills_name">Angular</h3>
-                                    <span class="skills_number">10%</span>
-                                </div>
-                                <div class="skills_bar">
-                                    <span class="skills_percentage skills_angular"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+
+              <div class="skills_list grid">
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">ESNext</h3>
+                    <span class="skills_number">10%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_esnext"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Ajax</h3>
+                    <span class="skills_number">10%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_ajax"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Bootstrap</h3>
+                    <span class="skills_number">10%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_bootstrap"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">VueJS</h3>
+                    <span class="skills_number">10%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_vuejs"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">jQuery</h3>
+                    <span class="skills_number">10%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_jquery"></span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Angular</h3>
+                    <span class="skills_number">10%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_angular"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+      </section>
+      <!-- ==== QUALIFICATION ==== -->
+      <section class="qualification section">
+        <h2 class="section_title">Qualifications</h2>
+        <span class="section_subtitle">My personal journey</span>
+
+        <div class="qualification_container container">
+          <div class="qualification_tabs">
+            <div
+              class="qualification_button button--flex qualification_active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification_icon"></i>
+              Education
+            </div>
+
+            <div class="qualification_button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification_icon"></i>
+              Work
+            </div>
+          </div>
+
+          <div class="qualification_sections">
+            <!-- ==== QUALIFICATIONS CONTENT 1 ==== -->
+            <div
+              class="qualification_content qualification_active"
+              data-content
+              id="education"
+            >
+              <!-- ==== QUALIFICATIONS 1 ==== -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">JavaScript</h3>
+                  <span class="qualification_subtitle">Online</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </div>
                 </div>
 
                 <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
                 </div>
-            </div>
-        </section>
-        <!-- ==== QUALIFICATION ==== -->
-        <section class="qualification section">
-            <h2 class="section_title">Qualifications</h2>
-            <span class="section_subtitle">My personal journey</span>
+              </div>
 
-            <div class="qualification_container container">
-                <div class="qualification_tabs">
-                    <div class="qualification_button button--flex qualification_active" data-target='#education' >
-                        <i class="uil uil-graduation-cap qualification_icon"></i>
-                        Education
-                    </div>
+              <!-- ==== QUALIFICATIONS 2 ==== -->
+              <div class="qualification_data">
+                <div></div>
 
-                    <div class="qualification_button button--flex" data-target='#work'>
-                        <i class="uil uil-briefcase-alt qualification_icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification_sections">
-                    <!-- ==== QUALIFICATIONS CONTENT 1 ==== -->
-                    <div class="qualification_content qualification_active" data-content id='education'>
-                        <!-- ==== QUALIFICATIONS 1 ==== -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">JavaScript</h3>
-                                <span class="qualification_subtitle">Online</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 - 2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>
-
-                        <!-- ==== QUALIFICATIONS 2 ==== -->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Inclusive Education</h3>
-                                <span class="qualification_subtitle">Brazil - FABEC Brasil</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014 - 2014
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ==== QUALIFICATIONS 3 ==== -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Linguistics</h3>
-                                <span class="qualification_subtitle">Brazil - University</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2010 - 2014
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <!-- <span class="qualification_line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ==== QUALIFICATIONS CONTENT 2 ==== -->
-                    <div class="qualification_content" data-content id='work'>
-                        <!-- ==== QUALIFICATIONS 1 ==== -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Portuguese Teacher</h3>
-                                <span class="qualification_subtitle">Online - Italki</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-                        </div>
-
-                        <!-- ==== QUALIFICATIONS 2 ==== -->
-                        <div class="qualification_data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <span class="qualification_line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification_title">Portuguese Teacher</h3>
-                                <span class="qualification_subtitle">Brazil - Institute </span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2019
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ==== QUALIFICATIONS 3 ==== -->
-                        <div class="qualification_data">
-                            <div>
-                                <h3 class="qualification_title">Administrative Assistant</h3>
-                                <span class="qualification_subtitle">Brazil - Institute</span>
-                                <div class="qualification_calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014 - 2017
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification_rounder"></span>
-                                <!-- <span class="qualification_line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ==== PORTFOLIO ==== -->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section_title">Portfolio</h2>
-            <span class="section_subtitle">Personal projects</span>
-            
-            <div class="portfolio_container container">
                 <div>
-                    <!-- ==== PORTFOLIO 1 ==== -->
-                    <div class="portfolio_content grid">
-                        <img src="" alt="" class="portfolio_img">
-                    </div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
                 </div>
 
-            </div>
-        </section>
+                <div>
+                  <h3 class="qualification_title">Inclusive Education</h3>
+                  <span class="qualification_subtitle"
+                    >Brazil - FABEC Brasil</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 - 2014
+                  </div>
+                </div>
+              </div>
 
+              <!-- ==== QUALIFICATIONS 3 ==== -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Linguistics</h3>
+                  <span class="qualification_subtitle"
+                    >Brazil - University</span
+                  >
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2010 - 2014
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <!-- <span class="qualification_line"></span> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== QUALIFICATIONS CONTENT 2 ==== -->
+            <div class="qualification_content" data-content id="work">
+              <!-- ==== QUALIFICATIONS 1 ==== -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Portuguese Teacher</h3>
+                  <span class="qualification_subtitle">Online - Italki</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <!-- ==== QUALIFICATIONS 2 ==== -->
+              <div class="qualification_data">
+                <div></div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification_title">Portuguese Teacher</h3>
+                  <span class="qualification_subtitle"
+                    >Brazil - Institute
+                  </span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2017 - 2019
+                  </div>
+                </div>
+              </div>
+
+              <!-- ==== QUALIFICATIONS 3 ==== -->
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Administrative Assistant</h3>
+                  <span class="qualification_subtitle">Brazil - Institute</span>
+                  <div class="qualification_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2014 - 2017
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <!-- <span class="qualification_line"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==== PORTFOLIO ==== -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+        <span class="section_subtitle">Personal projects</span>
+
+        <div class="portfolio_container container">
+          <div>
+            <!-- ==== PORTFOLIO 1 ==== -->
+            <div class="portfolio_content grid">
+              <img src="" alt="" class="portfolio_img" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- ==== CONTACTE ME ==== -->
-<section class="contacte section" id="contact"> 
-    <h2 class="section_title">Contact Me</h2>
-    <span class="section_subtitle">Get in touch</span>
+    <section class="contacte section" id="contact">
+      <h2 class="section_title">Contact Me</h2>
+      <span class="section_subtitle">Get in touch</span>
 
-    <div class="contact_container container grid">
+      <div class="contact_container container grid">
         <div>
-            <div class="contact_information">
-                <i class="uil uil-phone contact_icon"></i>
+          <div class="contact_information">
+            <i class="uil uil-phone contact_icon"></i>
 
-                <div>
-                    <h3 class="contact_title">Call Me</h3>
-                    <span class="contact_subtitle">+351 924 266 275</span>
-                </div>
+            <div>
+              <h3 class="contact_title">Call Me</h3>
+              <span class="contact_subtitle">+351 924 266 275</span>
             </div>
+          </div>
 
-            <div class="contact_information">
-                <i class="uil uil-envelope contact_icon"></i>
+          <div class="contact_information">
+            <i class="uil uil-envelope contact_icon"></i>
 
-                <div>
-                    <h3 class="contact_title">Email</h3>
-                    <span class="contact_subtitle">glauciellec@gmail.com</span>
-                </div>
+            <div>
+              <h3 class="contact_title">Email</h3>
+              <span class="contact_subtitle">glauciellec@gmail.com</span>
             </div>
+          </div>
 
-            <div class="contact_information">
-                <i class="uil uil-map-marker contact_icon"></i>
+          <div class="contact_information">
+            <i class="uil uil-map-marker contact_icon"></i>
 
-                <div>
-                    <h3 class="contact_title">Location</h3>
-                    <span class="contact_subtitle">Brussels - Belgium </span>
-                </div>
+            <div>
+              <h3 class="contact_title">Location</h3>
+              <span class="contact_subtitle">Brussels - Belgium </span>
             </div>
+          </div>
         </div>
-    </div>
-
-</section>
-
+      </div>
+    </section>
 
     <!-- ==== FOOTER ==== -->
-<footer class="footer">
-    <div class="footer_bg">
+    <footer class="footer">
+      <div class="footer_bg">
         <div class="footer_container container grid">
-            <div>
-                <h1 class="footer_title">Glaucielle</h1>
-                <span class="footer_subtitle">Frontend developer</span>
-            </div>
-            <ul class="footer_links">
-                <li>
-                    <a href="#portfolio" class="footer_link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact" class="footer_link">Contact Me</a>
-                </li>
-            </ul>
-            <div class="footer_socials">
-                <a href="https://www.linkedin.com/in/glauciellec/" target="_blank" class="footer_social">
-                    <i class="uil uil-linkedin-alt"></i>
-                </a>
+          <div>
+            <h1 class="footer_title">Glaucielle</h1>
+            <span class="footer_subtitle">Frontend developer</span>
+          </div>
+          <ul class="footer_links">
+            <li>
+              <a href="#portfolio" class="footer_link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer_link">Contact Me</a>
+            </li>
+          </ul>
+          <div class="footer_socials">
+            <a
+              href="https://www.linkedin.com/in/glauciellec/"
+              target="_blank"
+              class="footer_social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
 
-                <a href="https://github.com/glauciellesa" target="_blank" class="footer_social">
-                    <i class="uil uil-github-alt"></i> 
-                </a>
+            <a
+              href="https://github.com/glauciellesa"
+              target="_blank"
+              class="footer_social"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
 
-                <a href="https://www.instagram.com/eidizai_portugues/" target="_blank" class="footer_social">
-                    <i class="uil uil-instagram"></i>
-                </a>
-            </div>
+            <a
+              href="https://www.instagram.com/eidizai_portugues/"
+              target="_blank"
+              class="footer_social"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <!-- ==== SCROLL TOP ==== -->
     <a href="#" class="scrollup up" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup_icon"></i>
+      <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
 
     <!-- ==== SWIPER JS ==== -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- ==== MAIN JS ==== -->
     <script src="src/app.js"></script>
-</body>
+  </body>
 </html>
