@@ -631,6 +631,84 @@ img {
 
 /* ========== PORTFOLIO ========== */
 
+.portfolio_container {
+  overflow: initial;
+}
+
+.portfolio_img {
+  width: 165px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.portfolio_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon {
+  transform: translateX(0.25rem);
+}
+
+/* _____________Carousel______________ */
+.carousel {
+  width: 60vw;
+  height: 50vh;
+  position: relative;
+}
+
+.portfolio_content {
+  padding: 0 1rem;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.portfolio_content > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+.portfolio_content[data-active] {
+  opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  z-index: 900;
+  top: 50%;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  right: 1rem;
+}
+.carousel-button.next {
+  left: 1rem;
+}
 /* ========== PROJECT IN MIND ========== */
 
 /* ========== CONTACT ME ========== */

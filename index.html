@@ -468,10 +468,139 @@
         <span class="section_subtitle">Personal projects</span>
 
         <div class="portfolio_container container">
-          <div>
+          <div class="carousel">
+            <button class="carousel-button prev">
+              <i class="uil uil-angle-right-b"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="uil uil-angle-left-b"></i>
+            </button>
             <!-- ==== PORTFOLIO 1 ==== -->
-            <div class="portfolio_content grid">
-              <img src="" alt="" class="portfolio_img" />
+            <div class="portfolio_content" data-active>
+              <img
+                src="src/img/portfolio.png"
+                alt="portfolio's photo"
+                class="portfolio_img"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">My portfolio</h3>
+                <p class="portfolio_description">
+                  Responsivo personal portfolio website using HTML, CSS and
+                  JavaScript.
+                </p>
+                <a
+                  href="https://github.com/glauciellesa/glauciellesa.github.io"
+                  class="button button--flex button--small portfolio_button"
+                  >Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ==== PORTFOLIO 2 ==== -->
+            <div class="portfolio_content">
+              <img
+                src="src/img/aluraTube.png"
+                alt="aluraTube's photo"
+                class="portfolio_img"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">AluraTube</h3>
+                <p class="portfolio_description">
+                  AluraTube is a YouTube-inspired platform where you can save
+                  your favorite videos used in your learning journey to become a
+                  developer.
+                </p>
+                <a
+                  href="https://alura-tube-opal.vercel.app/"
+                  class="button button--flex button--small portfolio_button"
+                  >Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ==== PORTFOLIO 3 ==== -->
+            <div class="portfolio_content">
+              <img
+                src="src/img/stickNotes.png"
+                alt="stickNotes's photo"
+                class="portfolio_img"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Stick-it notes</h3>
+                <p class="portfolio_description">
+                  StickNotes is a project to learn the localStorage web storage
+                  API and practice DOM and CSS manipulation.
+                </p>
+                <a
+                  href="https://github.com/glauciellesa/stickNotes"
+                  class="button button--flex button--small portfolio_button"
+                  >Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ==== PORTFOLIO 4 ==== -->
+            <div class="portfolio_content">
+              <img
+                src="src/img/calculator.png"
+                alt="calculator's photo"
+                class="portfolio_img"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">My calculator</h3>
+                <p class="portfolio_description">
+                  This was a project made to practice useState in React, as well
+                  as improve my knowledge in CSS.
+                </p>
+                <a
+                  href="https://github.com/glauciellesa/React-Calculator"
+                  class="button button--flex button--small portfolio_button"
+                  >Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ==== PORTFOLIO 5 ==== -->
+            <div class="portfolio_content">
+              <img
+                src="src/img/businessCard.png"
+                alt="businessCard's photo"
+                class="portfolio_img"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">My business card</h3>
+                <p class="portfolio_description">
+                  This was a project made to practice useState in React, as well
+                  as improve my knowledge in CSS.
+                </p>
+                <a
+                  href="https://github.com/glauciellesa/businessCard"
+                  class="button button--flex button--small portfolio_button"
+                  >Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ==== PORTFOLIO 6 ==== -->
+            <div class="portfolio_content">
+              <img
+                src="src/img/staff.png"
+                alt="staffTable's photo"
+                class="portfolio_img"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Staff Table</h3>
+                <p class="portfolio_description">
+                  This was a project made to practice AXIOS API to retrieve data
+                  and display it in a table called staff.
+                </p>
+                <a
+                  href="https://github.com/glauciellesa/staff-table"
+                  class="button button--flex button--small portfolio_button"
+                  >Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -565,8 +694,6 @@
       <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
 
-    <!-- ==== SWIPER JS ==== -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- ==== MAIN JS ==== -->
     <script src="src/app.js"></script>
   </body>
