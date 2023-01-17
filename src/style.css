@@ -663,16 +663,12 @@ img {
 
 .portfolio_content {
   padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  inset: 0;
-  opacity: 0;
 }
 
 .portfolio_content > img {
   display: block;
   width: 100%;
-  padding-bottom: 3rem;
+
   object-fit: fill;
   object-position: center;
   border-radius: 10px;
@@ -685,10 +681,11 @@ img {
   position: absolute;
   background: none;
   border: none;
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: lighter;
   z-index: 900;
-  top: 70%;
-  color: var(--first-color-alt);
+  top: 50%;
+  color: var(--first-color);
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0 0.2rem;
@@ -697,10 +694,6 @@ img {
 .carousel-button:hover,
 .carousel-button:focus {
   color: var(--first-color-alt);
-}
-
-.carousel-button:focus {
-  outline: 1px solid black;
 }
 
 .carousel-button.prev {
