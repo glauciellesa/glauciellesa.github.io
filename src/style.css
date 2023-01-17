@@ -80,6 +80,19 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
+body:not(dark-theme) img:not(dark-theme) {
+  display: none !important;
+}
+body:not(dark-theme) img.dark-theme {
+  display: block !important;
+}
+body.dark-theme img.dark-theme {
+  display: none !important;
+}
+
+body.dark-theme img:not(dark-theme) {
+  display: block !important;
+}
 /* ==== Button Dark/light ====*/
 .nav_btns {
   display: flex;
@@ -667,16 +680,17 @@ img {
   flex: 0 0 100%;
 }
 
-.portfolio_content > img {
+/* .portfolio_content > img {
   display: block;
   width: 100%;
   object-fit: fill;
   object-position: center;
   border-radius: 10px;
-}
+} */
 
 .portfolio_img {
-  width: 165px;
+  width: auto;
+  max-height: 260px;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -849,7 +863,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-
   .home_blob {
     width: 180px;
   }
