@@ -630,15 +630,16 @@ img {
 /* Active Modal */
 
 /* ========== PORTFOLIO ========== */
-
-.portfolio_container {
-  overflow: initial;
+.portfolio {
+  position: relative;
 }
-
-.portfolio_img {
-  width: 165px;
-  border-radius: 0.5rem;
-  justify-self: center;
+.portfolio_container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .portfolio_title {
@@ -655,30 +656,36 @@ img {
 }
 
 /* _____________Carousel______________ */
-.carousel {
-  width: 100%;
+.carousel-container {
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .portfolio_content {
   padding: 0 1rem;
+  flex: 0 0 100%;
 }
 
 .portfolio_content > img {
   display: block;
   width: 100%;
-
   object-fit: fill;
   object-position: center;
   border-radius: 10px;
 }
+
+.portfolio_img {
+  width: 165px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
 .portfolio_content[data-active] {
   opacity: 1;
 }
 
 .carousel-button {
-  position: absolute;
   background: none;
   border: none;
   font-size: 3rem;
@@ -697,10 +704,10 @@ img {
 }
 
 .carousel-button.prev {
-  right: -2rem;
+  right: 0rem;
 }
 .carousel-button.next {
-  left: -2rem;
+  left: 0rem;
 }
 /* ========== PROJECT IN MIND ========== */
 
@@ -882,10 +889,14 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
+  .portfolio_container.container {
+    margin: 0;
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
   }
+
   body {
     margin: 0;
   }

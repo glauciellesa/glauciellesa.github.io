@@ -463,14 +463,17 @@
         </div>
       </section>
       <!-- ==== PORTFOLIO ==== -->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section">
         <h2 class="section_title">Portfolio</h2>
         <span class="section_subtitle">Personal projects</span>
-
-        <div class="portfolio_container container">
-          <div class="carousel">
+        <div class="carousel-container">
+          <button class="carousel-button prev" id="slide-arrow-prev">
+            <i class="uil uil-angle-left-b"></i>
+          </button>
+          <div class="portfolio_container container" id="slides-container">
+            <!-- <div class="carousel"> -->
             <!-- ==== PORTFOLIO 1 ==== -->
-            <!--  <div class="portfolio_content grid" data-active>
+            <div class="portfolio_content grid" data-active>
               <img
                 src="src/img/portfolio.png"
                 alt="portfolio's photo"
@@ -489,7 +492,7 @@
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
               </div>
-            </div> -->
+            </div>
             <!-- ==== PORTFOLIO 2 ==== -->
             <div class="portfolio_content grid">
               <img
@@ -513,7 +516,7 @@
               </div>
             </div>
             <!-- ==== PORTFOLIO 3 ==== -->
-            <!-- <div class="portfolio_content grid">
+            <div class="portfolio_content grid">
               <img
                 src="src/img/stickNotes.png"
                 alt="stickNotes's photo"
@@ -532,9 +535,9 @@
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
               </div>
-            </div> -->
+            </div>
             <!-- ==== PORTFOLIO 4 ==== -->
-            <!-- <div class="portfolio_content">
+            <div class="portfolio_content grid">
               <img
                 src="src/img/calculator.png"
                 alt="calculator's photo"
@@ -553,30 +556,10 @@
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
               </div>
-            </div> -->
+            </div>
+
             <!-- ==== PORTFOLIO 5 ==== -->
-            <!-- <div class="portfolio_content">
-              <img
-                src="src/img/businessCard.png"
-                alt="businessCard's photo"
-                class="portfolio_img"
-              />
-              <div class="portfolio_data">
-                <h3 class="portfolio_title">My business card</h3>
-                <p class="portfolio_description">
-                  This was a project made to practice useState in React, as well
-                  as improve my knowledge in CSS.
-                </p>
-                <a
-                  href="https://github.com/glauciellesa/businessCard"
-                  class="button button--flex button--small portfolio_button"
-                  >Demo
-                  <i class="uil uil-arrow-right button_icon"></i>
-                </a>
-              </div>
-            </div> -->
-            <!-- ==== PORTFOLIO 6 ==== -->
-            <!--  <div class="portfolio_content">
+            <div class="portfolio_content grid">
               <img
                 src="src/img/staff.png"
                 alt="staffTable's photo"
@@ -595,14 +578,13 @@
                   <i class="uil uil-arrow-right button_icon"></i>
                 </a>
               </div>
-            </div> -->
-            <button class="carousel-button prev">
-              <i class="uil uil-angle-right-b"></i>
-            </button>
-            <button class="carousel-button next">
-              <i class="uil uil-angle-left-b"></i>
-            </button>
+            </div>
+
+            <!-- </div> -->
           </div>
+          <button class="carousel-button next" id="slide-arrow-next">
+            <i class="uil uil-angle-right-b"></i>
+          </button>
         </div>
       </section>
     </main>
