@@ -903,7 +903,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .portfolio_container.container {
-    margin: 0;
+    margin: 4rem;
   }
   .container {
     margin-left: auto;
